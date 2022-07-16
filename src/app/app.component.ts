@@ -23,7 +23,7 @@ export class AppComponent  {
   ];
 
   constructor() {
-    // this.loadScript();
+    this.loadScript();
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
   }

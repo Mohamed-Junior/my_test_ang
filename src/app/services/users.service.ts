@@ -120,7 +120,6 @@ export class UsersService {
         allUsers.push(this.convertModalToDetail(usersTB[i]))
       }  
     }
-    console.log(usersTB)
 
     return allUsers
   }

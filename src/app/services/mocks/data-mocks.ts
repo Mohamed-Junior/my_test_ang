@@ -116,7 +116,7 @@ export let missionsDB: MissionModal[] =
             "id": 3,
             "employeeId": 1,
             "vehicleId": 3,
-            "driverId": 8,
+            "driverId": 7,
             "status": "waiting",
             "sourceLatitude": 35.5304379885449,
             "sourceLongitude": 11.0302734375,
@@ -712,7 +712,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 61,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Employees",
         "canCreate": false,
         "canRead": false,
@@ -721,7 +721,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 62,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Drivers",
         "canCreate": false,
         "canRead": true,
@@ -730,7 +730,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 63,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Vehicles",
         "canCreate": false,
         "canRead": true,
@@ -739,7 +739,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 64,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Missions",
         "canCreate": false,
         "canRead": true,
@@ -748,7 +748,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 65,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Tracers",
         "canCreate": false,
         "canRead": false,
@@ -757,7 +757,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 66,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "GroupeVehicles",
         "canCreate": false,
         "canRead": true,
@@ -766,7 +766,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 67,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Insurances",
         "canCreate": false,
         "canRead": false,
@@ -775,7 +775,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 68,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Providers",
         "canCreate": false,
         "canRead": false,
@@ -784,7 +784,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 69,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Vignettes",
         "canCreate": false,
         "canRead": false,
@@ -793,7 +793,7 @@ export let privilegesDB: PrivilegeModal[] = [
     },
     {
         "id": 70,
-        "userID": 8,
+        "userID": 7,
         "moduleName": "Vouchers",
         "canCreate": false,
         "canRead": false,
@@ -864,7 +864,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-20",
             "dateStartUsage": "2022-06-26",
             "dateLimiteUsage": "2022-12-01",
-            "imageUrl": "assets/img/vehicles/vehicle1.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle1.jpg",
             "groupeName": "Groupe1",
         },
         {
@@ -875,7 +875,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-20",
             "dateStartUsage": "2022-06-23",
             "dateLimiteUsage": "2023-08-30",
-            "imageUrl": "assets/img/vehicles/vehicle2.jpeg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle2.jpg",
             "groupeName": "Groupe2",
         },
         {
@@ -886,7 +886,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-20",
             "dateStartUsage": "2022-06-22",
             "dateLimiteUsage": "2024-07-31",
-            "imageUrl": "assets/img/vehicles/vehicle3.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle3.jpg",
             "groupeName": "Groupe3",
         },
         {
@@ -897,7 +897,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-28",
             "dateStartUsage": "2022-06-24",
             "dateLimiteUsage": "2023-03-24",
-            "imageUrl": "assets/img/vehicles/vehicle4.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle4.jpg",
             "groupeName": "Groupe1",
         },
         {
@@ -908,7 +908,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-20",
             "dateStartUsage": "2022-06-23",
             "dateLimiteUsage": "2024-05-14",
-            "imageUrl": "assets/img/vehicles/vehicle5.png",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle5.png",
             "groupeName": "Groupe1",
         },
         {
@@ -919,7 +919,7 @@ export let vehiclesDB: VehicleModal[] =
             "datePurchase": "2022-06-27",
             "dateStartUsage": "2022-06-17",
             "dateLimiteUsage": "2023-10-20",
-            "imageUrl": "assets/img/vehicles/vehicle6.jpeg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/vehicles/vehicle6.jpg",
             "groupeName": "Groupe5",
         }
     ]
@@ -1061,7 +1061,7 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358459",
             "address": "Monastirr",
-            "imageUrl": "assets/img/users/med_li_jr.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/med_li_jr.jpg",
             "roleName": "superAdmin",
             "isSuperAdmin": true,
 
@@ -1073,7 +1073,7 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358458",
             "address": "Soussa",
-            "imageUrl": "assets/img/users/adminemp.png",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/adminemp.png",
             "roleName": "employee",
             "isSuperAdmin": false,
 
@@ -1085,7 +1085,7 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358457",
             "address": "Mahdia",
-            "imageUrl": "assets/img/users/jensen.jpeg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/jensen.jpg",
             "roleName": "driver",
             "isSuperAdmin": false,
 
@@ -1097,7 +1097,7 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358456",
             "address": "Sfax",
-            "imageUrl": "assets/img/users/Grant_Gustin.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/Henry_Cavill.jpg",
             "roleName": "employee",
             "isSuperAdmin": false,
 
@@ -1109,7 +1109,7 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358455",
             "address": "Tunis",
-            "imageUrl": "assets/img/users/grimm.jpg",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/dicaprio.jpg",
             "roleName": "employee",
             "isSuperAdmin": false,
 
@@ -1121,19 +1121,19 @@ export let usersDB: UserModal[] =
             "password": "a",
             "phone": "56358454",
             "address": "Medenine",
-            "imageUrl": "assets/img/users/driver1.png",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/Grant_Gustin.jpg",
             "roleName": "driver",
             "isSuperAdmin": false,
 
         },
         {
-            "id": 8,
+            "id": 7,
             "fullname": "Driver2",
             "email": "driver2@gmail.com",
             "password": "a",
             "phone": "56358453",
             "address": "Moknine",
-            "imageUrl": "assets/img/users/driver2.png",
+            "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/driver2.png",
             "roleName": "driver",
             "isSuperAdmin": false,
 

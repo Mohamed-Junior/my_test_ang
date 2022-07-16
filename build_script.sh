@@ -14,5 +14,5 @@ echo "commit has started........."
 git commit -m "test build hosting"
 echo "commit has finished........."
 echo "push has started........."
-git push -u origin main
+git push -u origin gh-pages
 echo "push has finished........."

@@ -180,9 +180,9 @@ export class UpdateMissionComponent implements OnInit {
     }).addTo(mapLocDest);
 
     let srcMarker = L.marker(sourceLatlng).addTo(mapLocSrc)
-    .bindPopup('Marker Source.')
+    .bindPopup('Marker Source.', { closeButton: false })
     let destMarker = L.marker(destinationLatlng).addTo(mapLocDest)
-    .bindPopup('Marker Destination.')
+    .bindPopup('Marker Destination.', { closeButton: false })
 
 
 
@@ -199,7 +199,7 @@ export class UpdateMissionComponent implements OnInit {
 
       mapLocSrc.removeLayer(srcMarker)
       srcMarker = L.marker(ev.latlng).addTo(mapLocSrc)
-          .bindPopup('Marker Source.')
+          .bindPopup('Marker Source.', { closeButton: false })
   });
 
   mapLocDest.on('click', function (ev: any) {
@@ -215,7 +215,7 @@ export class UpdateMissionComponent implements OnInit {
 
       mapLocDest.removeLayer(destMarker)
       destMarker = L.marker(ev.latlng).addTo(mapLocDest)
-          .bindPopup('Marker Destination.')
+          .bindPopup('Marker Destination.', { closeButton: false })
   });
     }
     catch (e) {

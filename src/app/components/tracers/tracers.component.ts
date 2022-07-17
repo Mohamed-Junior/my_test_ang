@@ -335,11 +335,11 @@ export class TracersComponent implements OnInit, OnDestroy {
       });
 
         mainThis.markerSource = L.marker([tracer.sourceLatitude, tracer.sourceLongitude], {icon: greenIcon})
-        .bindPopup("source : " + tracer.sourceLocation)
+        .bindPopup("source : " + tracer.sourceLocation,{ closeButton: false })
         .addTo(mainThis.map)
 
         mainThis.markerDestination = L.marker([tracer.destinationLatitude, tracer.destinationLongitude], {icon: redIcon})
-        .bindPopup("destination : " + tracer.destinationLocation)
+        .bindPopup("destination : " + tracer.destinationLocation, { closeButton: false })
         .addTo(mainThis.map)
         // zoom the map to the polyline
         mainThis.map.fitBounds(bound);

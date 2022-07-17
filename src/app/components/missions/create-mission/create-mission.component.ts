@@ -195,7 +195,7 @@ export class CreateMissionComponent implements OnInit {
 
         mapLocSrc.removeLayer(srcMarker)
         srcMarker = L.marker(ev.latlng).addTo(mapLocSrc)
-          .bindPopup('Marker Source.')
+          .bindPopup('Marker Source.', { closeButton: false })
       });
 
       mapLocDest.on('click', function (ev: any) {
@@ -211,7 +211,7 @@ export class CreateMissionComponent implements OnInit {
 
         mapLocDest.removeLayer(destMarker)
         destMarker = L.marker(ev.latlng).addTo(mapLocDest)
-          .bindPopup('Marker Destination.')
+          .bindPopup('Marker Destination.', { closeButton: false })
       });
     }
     catch (e) {

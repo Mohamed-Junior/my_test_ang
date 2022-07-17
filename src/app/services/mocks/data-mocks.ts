@@ -10,7 +10,8 @@ import { VignetteModal } from "../../modals/vignette.modal";
 import { VoucherModal } from "../../modals/voucher.modal";
 
 /* GROUPES DB */
-export let groupesDB: GroupeModal[] =
+export let groupesDB: GroupeModal[] = [];
+let dbD =    
     [
         {
             "id": 1,
@@ -41,7 +42,8 @@ export let groupesDB: GroupeModal[] =
 
 
 /* INSURANCES DB */
-export let insurancesDB: InsuranceModal[] =
+export let insurancesDB: InsuranceModal[] = [];
+let dbDs =    
     [
         {
             "id": 1,
@@ -91,8 +93,9 @@ export let insurancesDB: InsuranceModal[] =
     ]
 
 /* MISSIONS DB */
-export let missionsDB: MissionModal[] =
+export let missionsDB: MissionModal[] = [];
 
+let dbDa =    
     [
         {
             "id": 2,
@@ -169,7 +172,101 @@ export let missionsDB: MissionModal[] =
     ]
 
 /* PRIVILEGES DB */
-export let privilegesDB: PrivilegeModal[] = [
+export let privilegesDB: PrivilegeModal[] =
+    [
+        {
+            "id": 1,
+            "userID": 1,
+            "moduleName": "Employees",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 2,
+            "userID": 1,
+            "moduleName": "Drivers",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 3,
+            "userID": 1,
+            "moduleName": "Vehicles",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 4,
+            "userID": 1,
+            "moduleName": "Missions",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 5,
+            "userID": 1,
+            "moduleName": "Tracers",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 6,
+            "userID": 1,
+            "moduleName": "GroupeVehicles",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 7,
+            "userID": 1,
+            "moduleName": "Insurances",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 8,
+            "userID": 1,
+            "moduleName": "Providers",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 9,
+            "userID": 1,
+            "moduleName": "Vignettes",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+        {
+            "id": 10,
+            "userID": 1,
+            "moduleName": "Vouchers",
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+        },
+    ]
+let dbDz =    
+[
     {
         "id": 1,
         "userID": 1,
@@ -804,7 +901,8 @@ export let privilegesDB: PrivilegeModal[] = [
 
 
 /* PROVIDERS DB */
-export let providersDB: ProviderModal[] =
+export let providersDB: ProviderModal[] = []
+let dbDe =
     [
         {
             "id": 1,
@@ -854,7 +952,8 @@ export let tracersDB: TracerModal[] = []
 
 
 /* VEHICLES DB */
-export let vehiclesDB: VehicleModal[] =
+export let vehiclesDB: VehicleModal[] = [];
+let dbDr =
     [
         {
             "id": 1,
@@ -926,7 +1025,8 @@ export let vehiclesDB: VehicleModal[] =
 
 
 /* VIGNETTES DB */
-export let vignettesDB: VignetteModal[] =
+export let vignettesDB: VignetteModal[] =[];
+let dbDt =
     [
         {
             "id": 1,
@@ -980,8 +1080,9 @@ export let vignettesDB: VignetteModal[] =
 
 
 /* VOUCHERS DB */
-export let vouchersDB: VoucherModal[] =
-    [
+export let vouchersDB: VoucherModal[] = [];
+let dbDy =
+[
         {
             "id": 1,
             "employeeId": 3,
@@ -1051,7 +1152,21 @@ export let vouchersDB: VoucherModal[] =
 
 
 /* USERS DB */
-export let usersDB: UserModal[] =
+export let usersDB: UserModal[] = [
+    {
+        "id": 1,
+        "fullname": "SupAdmin",
+        "email": "MedLawani.jr@gmail.com",
+        "password": "a",
+        "phone": "24635003",
+        "address": "Monastir",
+        "imageUrl": "https://raw.githubusercontent.com/Med-Li-Jr/images_demo/main/fleet_app/users/med_li_jr.jpg",
+        "roleName": "superAdmin",
+        "isSuperAdmin": true,
+
+    },
+];
+let dbDu =
 
     [
         {
@@ -1154,8 +1269,8 @@ export let allMarker: any = [];
 (window as any).vignettesDB = vignettesDB;
 (window as any).vouchersDB = vouchersDB;
 (window as any).usersDB = usersDB;
-(window as any).allMarker = function() {
-    return allMarker
-};
+// (window as any).allMarker = function() {
+//     return allMarker
+// };
 
 

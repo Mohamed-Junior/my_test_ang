@@ -117,10 +117,10 @@ export class DetailMissionComponent implements OnInit {
       setTimeout(() => {
 
         L.marker(sourceLatlng).addTo(map)
-          .bindPopup('Source : ' + this.currentMission.sourceLocation)
+          .bindPopup('Source : ' + this.currentMission.sourceLocation, { closeButton: false })
 
         L.marker(destinationLatlng).addTo(map)
-          .bindPopup('Destination : ' + this.currentMission.destinationLocation)
+          .bindPopup('Destination : ' + this.currentMission.destinationLocation, { closeButton: false })
       }, 1000)
 
       this.mymapService.getArrayItineraireFromMapBox(sourceLatlng.lat, sourceLatlng.lng, destinationLatlng.lat, destinationLatlng.lng)

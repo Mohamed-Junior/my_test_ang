@@ -179,9 +179,9 @@ export class UpdateMissionComponent implements OnInit {
         accessToken: KEYMAPBOX
     }).addTo(mapLocDest);
 
-    let srcMarker = L.marker(sourceLatlng).addTo(mapLocSrc)
+    let srcMarker = L.marker(sourceLatlng,{icon: mainThis.helperService.getMarkerIcon("blue")}).addTo(mapLocSrc)
     .bindPopup('Marker Source.', { closeButton: false })
-    let destMarker = L.marker(destinationLatlng).addTo(mapLocDest)
+    let destMarker = L.marker(destinationLatlng,{icon: mainThis.helperService.getMarkerIcon("blue")}).addTo(mapLocDest)
     .bindPopup('Marker Destination.', { closeButton: false })
 
 
@@ -198,7 +198,7 @@ export class UpdateMissionComponent implements OnInit {
         )
 
       mapLocSrc.removeLayer(srcMarker)
-      srcMarker = L.marker(ev.latlng).addTo(mapLocSrc)
+      srcMarker = L.marker(ev.latlng,{icon: mainThis.helperService.getMarkerIcon("blue")}).addTo(mapLocSrc)
           .bindPopup('Marker Source.', { closeButton: false })
   });
 
@@ -214,7 +214,7 @@ export class UpdateMissionComponent implements OnInit {
         )
 
       mapLocDest.removeLayer(destMarker)
-      destMarker = L.marker(ev.latlng).addTo(mapLocDest)
+      destMarker = L.marker(ev.latlng,{icon: mainThis.helperService.getMarkerIcon("blue")}).addTo(mapLocDest)
           .bindPopup('Marker Destination.', { closeButton: false })
   });
     }

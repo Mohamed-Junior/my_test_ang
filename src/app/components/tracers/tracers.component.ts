@@ -316,29 +316,12 @@ export class TracersComponent implements OnInit, OnDestroy {
 
         // mainThis.map.removeLayer(mainThis.markerSource)
         // mainThis.map.removeLayer(mainThis.markerDestination)
-        var greenIcon = L.icon({
-          iconUrl: 'assets/img/icons/pin_green.svg.png',
-          shadowUrl: 'assets/img/icons/marker_shadow.png',
 
-          iconSize:     [25, 41], // size of the icon
-          iconAnchor:   [12, 41], // point of the icon which will correspond to marker's location
-          shadowAnchor: [10, 41],  // the same for the shadow
-      });
-
-        var redIcon = L.icon({
-          iconUrl: 'assets/img/icons/pin_red.png',
-          shadowUrl: 'assets/img/icons/marker_shadow.png',
-
-          iconSize:     [25, 41], // size of the icon
-          iconAnchor:   [12, 41], // point of the icon which will correspond to marker's location
-          shadowAnchor: [10, 41],  // the same for the shadow
-      });
-
-        mainThis.markerSource = L.marker([tracer.sourceLatitude, tracer.sourceLongitude], {icon: greenIcon})
+        mainThis.markerSource = L.marker([tracer.sourceLatitude, tracer.sourceLongitude], {icon: mainThis.helperService.getMarkerIcon("green")})
         .bindPopup("source : " + tracer.sourceLocation,{ closeButton: false })
         .addTo(mainThis.map)
 
-        mainThis.markerDestination = L.marker([tracer.destinationLatitude, tracer.destinationLongitude], {icon: redIcon})
+        mainThis.markerDestination = L.marker([tracer.destinationLatitude, tracer.destinationLongitude], {icon: mainThis.helperService.getMarkerIcon("red")})
         .bindPopup("destination : " + tracer.destinationLocation, { closeButton: false })
         .addTo(mainThis.map)
         // zoom the map to the polyline

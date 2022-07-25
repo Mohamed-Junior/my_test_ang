@@ -416,33 +416,33 @@ export class TracersComponent implements OnInit, OnDestroy {
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-4">
-          <h6>Vitesse: </h6>
+          <h6 style="font-size: 0.738rem !important">Vitesse: </h6>
         </div>
         <div class="col-md-8">
-          <h6><b>`+ tracer.currentSpeed + `</b> km/h </h6>
+          <h6 style="font-size: 0.738rem !important"><b>`+ tracer.currentSpeed + `</b> km/h </h6>
         </div>
         <div class="col-md-4">
-          <h6>Source: </h6>
+          <h6 style="font-size: 0.738rem !important">Source: </h6>
         </div>
         <div class="col-md-8">
-          <h6><b>`+ tracer.sourceLocation + `</b> </h6>
+          <h6 style="font-size: 0.738rem !important"><b>`+ tracer.sourceLocation + `</b> </h6>
         </div>
         <div class="col-md-4">
-          <h6>Destination: </h6>
+          <h6 style="font-size: 0.738rem !important">Destination: </h6>
         </div>
         <div class="col-md-8">
-          <h6><b>`+ tracer.destinationLocation + `</b> </h6>
+          <h6 style="font-size: 0.738rem !important"><b>`+ tracer.destinationLocation + `</b> </h6>
         </div>
         
       </div>
     </div>
-    <div class="col-md-6">
-        <img src="`+ tracer.vehicleImg + `" width="100" height="100">
-        <h6 class="text-center mt-2"><b> `+ tracer.vehicleMarque + ` </b> </h6>
+    <div class="col-md-6 text-center">
+        <img src="`+ tracer.vehicleImg + `" width="90" height="65">
+        <h6 style="font-size: 0.738rem !important" class="text-center mt-2"><b> `+ tracer.vehicleMarque + ` </b> </h6>
     </div>
-    <div class="col-md-6">
-        <img src="`+ tracer.driverImg + `" class="rounded-circle" width="100" height="100">
-        <h6 class="text-center mt-2"><b> `+ tracer.driverFullname + ` </b> </h6>
+    <div class="col-md-6 text-center">
+        <img src="`+ tracer.driverImg + `" class="rounded-circle" width="90" height="65">
+        <h6 style="font-size: 0.738rem !important" class="text-center mt-2"><b> `+ tracer.driverFullname + ` </b> </h6>
     </div>
 </div>`
     // let contentPopup = 'Vehicle : ' + tracer.vehicleMarque + ' <br> Location : ' + tracer.location + ' <br> Speed : ' + tracer.currentSpeed;
